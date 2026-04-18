@@ -47,15 +47,13 @@ export default function LoginPage() {
 
       const token = data.token || data.accessToken;
 
-      if (!token) {
-        throw new Error("Token not received");
-      }
-
-      // 👇 storage
-      if (remember) {
-        localStorage.setItem("token", token);
-      } else {
-        sessionStorage.setItem("token", token);
+      if (token) {
+        // 👇 storage
+        if (remember) {
+          localStorage.setItem("token", token);
+        } else {
+          sessionStorage.setItem("token", token);
+        }
       }
 
       alert("Login Successful ✅");
