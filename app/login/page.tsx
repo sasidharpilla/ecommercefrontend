@@ -79,8 +79,8 @@ export default function LoginPage() {
           <form onSubmit={handleLogin} className="flex flex-col gap-5">
 
             {/* Email */}
-            <div>
-              <label className="text-gray-400 text-sm mb-1 block">
+            <div className="flex flex-col">
+              <label className="text-gray-400 text-sm mb-1">
                 Email
               </label>
               <input
@@ -93,8 +93,8 @@ export default function LoginPage() {
             </div>
 
             {/* Password */}
-            <div>
-              <label className="text-gray-400 text-sm mb-1 block">
+            <div className="flex flex-col">
+              <label className="text-gray-400 text-sm mb-1">
                 Password
               </label>
               <input

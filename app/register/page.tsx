@@ -76,8 +76,8 @@ export default function RegisterPage() {
           <form onSubmit={handleRegister} className="flex flex-col gap-5">
 
             {/* Name */}
-            <div>
-              <label className="text-gray-400 text-sm mb-1 block">
+            <div className="flex flex-col">
+              <label className="text-gray-400 text-sm mb-1">
                 Name
               </label>
               <input
@@ -90,8 +90,8 @@ export default function RegisterPage() {
             </div>
 
             {/* Email */}
-            <div>
-              <label className="text-gray-400 text-sm mb-1 block">
+            <div className="flex flex-col">
+              <label className="text-gray-400 text-sm mb-1">
                 Email
               </label>
               <input
@@ -104,8 +104,8 @@ export default function RegisterPage() {
             </div>
 
             {/* Password */}
-            <div>
-              <label className="text-gray-400 text-sm mb-1 block">
+            <div className="flex flex-col">
+              <label className="text-gray-400 text-sm mb-1">
                 Password
               </label>
               <input
@@ -118,8 +118,8 @@ export default function RegisterPage() {
             </div>
 
             {/* Phone */}
-            <div>
-              <label className="text-gray-400 text-sm mb-1 block">
+            <div className="flex flex-col">
+              <label className="text-gray-400 text-sm mb-1">
                 Phone
               </label>
               <input
@@ -135,7 +135,7 @@ export default function RegisterPage() {
             <button
               type="submit"
               disabled={loading}
-              className={`px-6 py-2 rounded-full text-white font-semibold transition mx-auto ${
+              className={`w-full px-6 py-2 rounded-full text-white font-semibold transition ${
                 loading
                   ? "bg-gray-500 cursor-not-allowed"
                   : "bg-gradient-to-r from-cyan-400 to-pink-500 hover:opacity-90"
