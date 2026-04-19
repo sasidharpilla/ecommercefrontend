@@ -12,7 +12,7 @@ import ShopCate from "@/components/shopCate";
 
 export default function Home() {
   return (
-    <div>
+    <div className="max-w-7xl mx-auto">
       <Navbar />
       
       <Hero />

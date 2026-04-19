@@ -2,8 +2,8 @@ export default function Categories() {
   const categories = ["Men", "Women", "Kids", "Accessories"];
 
   return (
-    <section className="p-10 bg-gray-50">
-      <h3 className="text-3xl font-bold mb-6 text-center">
+    <section className="p-4 sm:p-6 md:p-10 bg-gray-50">
+      <h3 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-center">
         Shop by Category
       </h3>
 
