@@ -47,14 +47,7 @@ export default function LoginPage() {
 
       const token = data.token || data.accessToken;
 
-      if (token) {
-        // 👇 storage
-        if (remember) {
-          localStorage.setItem("token", token);
-        } else {
-          sessionStorage.setItem("token", token);
-        }
-      }
+   
 
       alert("Login Successful ✅");
       router.push("/");
@@ -75,7 +68,7 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500">
 
-      <div className="w-full max-w-md mx-auto px-2">
+      <div className="w-full max-w-md mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="w-full bg-black rounded-2xl shadow-2xl p-8">
 
